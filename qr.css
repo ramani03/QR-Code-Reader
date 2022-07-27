@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#281E5D ;
+}
+.main{
+    width: 450px;
+    height: 280px;
+    background-color: lavender;
+    padding: 40px 20px 35px;
+    border-radius: 5px;
+    transition: height 0.2s ease;
+}
+
+.main form{
+    height: 220px;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: height 0.2s ease;
+    
+}
+.main.active form img{
+    display: block;
+}
+.main.active form .info{
+    display: none;
+}
+form img{
+    max-width:145px ;
+    max-height: 145px;
+    display: none;
+}
+.main.active{
+    height: 530px;
+}
+.main.active form{
+    height: 230px;
+     pointer-events: none;
+}
+form .info i{
+    font-size: 55px;
+    color:#281E5D  ;
+}
+.main.active .detail{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+form .info p{
+ color:#281E5D  ;
+font-size: 19px;
+margin-top: 12px;
+
+}
+.main .detail{
+    margin-top: 30px;
+    opacity: 0;
+    pointer-events: none;
+}
+.detail textarea{
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(45, 45, 77);
+}
+.detail .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.buttons button{
+    background-color: black;
+    color: white;
+    padding: 10px 6px;
+    border-radius: 5px;
+    font-size: 17px;
+    width: calc(100% / 2 - 15px);
+}
